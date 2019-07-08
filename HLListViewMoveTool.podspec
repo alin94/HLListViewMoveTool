@@ -8,5 +8,7 @@ s.authors = { 'alin' => '946559304@qq.com' }
 s.source = { :git => "https://github.com/alin94/HLListViewMoveTool.git", :tag => "1.0.0"}
 s.requires_arc = true
 s.ios.deployment_target = '8.0'
-s.source_files = "HLListViewMoveTool/*.{h,m}", "*.{h,m}"
+s.source_files = 'HLListViewMoveTool/*'
+s.frameworks = 'Foundation', 'UIKit'
+
 end
