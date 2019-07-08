@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C751898822D2F2A5000F9AD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C751898722D2F2A5000F9AD6 /* AppDelegate.m */; };
+		C751898B22D2F2A5000F9AD6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C751898A22D2F2A5000F9AD6 /* ViewController.m */; };
+		C751898E22D2F2A5000F9AD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C751898C22D2F2A5000F9AD6 /* Main.storyboard */; };
+		C751899022D2F2AA000F9AD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C751898F22D2F2AA000F9AD6 /* Assets.xcassets */; };
+		C751899322D2F2AA000F9AD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C751899122D2F2AA000F9AD6 /* LaunchScreen.storyboard */; };
+		C751899622D2F2AA000F9AD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C751899522D2F2AA000F9AD6 /* main.m */; };
+		C75189AE22D2F2DC000F9AD6 /* UIView+ZJFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C751899E22D2F2DB000F9AD6 /* UIView+ZJFrame.m */; };
+		C75189AF22D2F2DC000F9AD6 /* ZJTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C75189A322D2F2DB000F9AD6 /* ZJTitleView.m */; };
+		C75189B022D2F2DC000F9AD6 /* UIViewController+ZJScrollPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = C75189A422D2F2DB000F9AD6 /* UIViewController+ZJScrollPageController.m */; };
+		C75189B122D2F2DC000F9AD6 /* ZJContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C75189A722D2F2DB000F9AD6 /* ZJContentView.m */; };
+		C75189B222D2F2DC000F9AD6 /* ZJCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C75189A822D2F2DB000F9AD6 /* ZJCollectionView.m */; };
+		C75189B322D2F2DC000F9AD6 /* ZJSegmentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = C75189A922D2F2DB000F9AD6 /* ZJSegmentStyle.m */; };
+		C75189B422D2F2DC000F9AD6 /* ZJScrollSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C75189AA22D2F2DB000F9AD6 /* ZJScrollSegmentView.m */; };
+		C75189B522D2F2DC000F9AD6 /* ZJScrollPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C75189AB22D2F2DB000F9AD6 /* ZJScrollPageView.m */; };
+		C75189B822D310B5000F9AD6 /* HLListViewMoveChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = C75189B722D310B5000F9AD6 /* HLListViewMoveChildController.m */; };
+		C75189BA22D34AF4000F9AD6 /* HLListViewMoveTool in Resources */ = {isa = PBXBuildFile; fileRef = C75189B922D34AF3000F9AD6 /* HLListViewMoveTool */; };
+		CC8F0215D2BD751B98859728 /* libPods-HLTrelloDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7A453846DF0D9B76261E60 /* libPods-HLTrelloDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0DB6D7239440BBAFD3634134 /* Pods-HLTrelloDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLTrelloDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HLTrelloDemo/Pods-HLTrelloDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9520E6D8606E834F34FFA2C9 /* Pods-HLTrelloDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLTrelloDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HLTrelloDemo/Pods-HLTrelloDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C751898322D2F2A5000F9AD6 /* HLTrelloDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLTrelloDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C751898622D2F2A5000F9AD6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C751898722D2F2A5000F9AD6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C751898922D2F2A5000F9AD6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C751898A22D2F2A5000F9AD6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C751898D22D2F2A5000F9AD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C751898F22D2F2AA000F9AD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C751899222D2F2AA000F9AD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C751899422D2F2AA000F9AD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C751899522D2F2AA000F9AD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C751899D22D2F2DB000F9AD6 /* ZJContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJContentView.h; sourceTree = "<group>"; };
+		C751899E22D2F2DB000F9AD6 /* UIView+ZJFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZJFrame.m"; sourceTree = "<group>"; };
+		C751899F22D2F2DB000F9AD6 /* ZJCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJCollectionView.h; sourceTree = "<group>"; };
+		C75189A022D2F2DB000F9AD6 /* ZJScrollSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollSegmentView.h; sourceTree = "<group>"; };
+		C75189A122D2F2DB000F9AD6 /* ZJScrollPageViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollPageViewDelegate.h; sourceTree = "<group>"; };
+		C75189A222D2F2DB000F9AD6 /* ZJSegmentStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSegmentStyle.h; sourceTree = "<group>"; };
+		C75189A322D2F2DB000F9AD6 /* ZJTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTitleView.m; sourceTree = "<group>"; };
+		C75189A422D2F2DB000F9AD6 /* UIViewController+ZJScrollPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZJScrollPageController.m"; sourceTree = "<group>"; };
+		C75189A522D2F2DB000F9AD6 /* ZJScrollPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollPageView.h; sourceTree = "<group>"; };
+		C75189A622D2F2DB000F9AD6 /* UIView+ZJFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZJFrame.h"; sourceTree = "<group>"; };
+		C75189A722D2F2DB000F9AD6 /* ZJContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJContentView.m; sourceTree = "<group>"; };
+		C75189A822D2F2DB000F9AD6 /* ZJCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJCollectionView.m; sourceTree = "<group>"; };
+		C75189A922D2F2DB000F9AD6 /* ZJSegmentStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSegmentStyle.m; sourceTree = "<group>"; };
+		C75189AA22D2F2DB000F9AD6 /* ZJScrollSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJScrollSegmentView.m; sourceTree = "<group>"; };
+		C75189AB22D2F2DB000F9AD6 /* ZJScrollPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJScrollPageView.m; sourceTree = "<group>"; };
+		C75189AC22D2F2DC000F9AD6 /* UIViewController+ZJScrollPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZJScrollPageController.h"; sourceTree = "<group>"; };
+		C75189AD22D2F2DC000F9AD6 /* ZJTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTitleView.h; sourceTree = "<group>"; };
+		C75189B622D310B5000F9AD6 /* HLListViewMoveChildController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLListViewMoveChildController.h; sourceTree = "<group>"; };
+		C75189B722D310B5000F9AD6 /* HLListViewMoveChildController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLListViewMoveChildController.m; sourceTree = "<group>"; };
+		C75189B922D34AF3000F9AD6 /* HLListViewMoveTool */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HLListViewMoveTool; sourceTree = SOURCE_ROOT; };
+		EE7A453846DF0D9B76261E60 /* libPods-HLTrelloDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HLTrelloDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C751898022D2F2A5000F9AD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8F0215D2BD751B98859728 /* libPods-HLTrelloDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC2FBE83C227052C37699F69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE7A453846DF0D9B76261E60 /* libPods-HLTrelloDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD0AE18520DA052A613812BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DB6D7239440BBAFD3634134 /* Pods-HLTrelloDemo.debug.xcconfig */,
+				9520E6D8606E834F34FFA2C9 /* Pods-HLTrelloDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C751897A22D2F2A4000F9AD6 = {
+			isa = PBXGroup;
+			children = (
+				C751898522D2F2A5000F9AD6 /* HLTrelloDemo */,
+				C751898422D2F2A5000F9AD6 /* Products */,
+				BD0AE18520DA052A613812BA /* Pods */,
+				BC2FBE83C227052C37699F69 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C751898422D2F2A5000F9AD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C751898322D2F2A5000F9AD6 /* HLTrelloDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C751898522D2F2A5000F9AD6 /* HLTrelloDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C75189B922D34AF3000F9AD6 /* HLListViewMoveTool */,
+				C751899C22D2F2DB000F9AD6 /* ZJScrollPageView */,
+				C751898622D2F2A5000F9AD6 /* AppDelegate.h */,
+				C751898722D2F2A5000F9AD6 /* AppDelegate.m */,
+				C751898922D2F2A5000F9AD6 /* ViewController.h */,
+				C751898A22D2F2A5000F9AD6 /* ViewController.m */,
+				C75189B622D310B5000F9AD6 /* HLListViewMoveChildController.h */,
+				C75189B722D310B5000F9AD6 /* HLListViewMoveChildController.m */,
+				C751898C22D2F2A5000F9AD6 /* Main.storyboard */,
+				C751898F22D2F2AA000F9AD6 /* Assets.xcassets */,
+				C751899122D2F2AA000F9AD6 /* LaunchScreen.storyboard */,
+				C751899422D2F2AA000F9AD6 /* Info.plist */,
+				C751899522D2F2AA000F9AD6 /* main.m */,
+			);
+			path = HLTrelloDemo;
+			sourceTree = "<group>";
+		};
+		C751899C22D2F2DB000F9AD6 /* ZJScrollPageView */ = {
+			isa = PBXGroup;
+			children = (
+				C751899D22D2F2DB000F9AD6 /* ZJContentView.h */,
+				C751899E22D2F2DB000F9AD6 /* UIView+ZJFrame.m */,
+				C751899F22D2F2DB000F9AD6 /* ZJCollectionView.h */,
+				C75189A022D2F2DB000F9AD6 /* ZJScrollSegmentView.h */,
+				C75189A122D2F2DB000F9AD6 /* ZJScrollPageViewDelegate.h */,
+				C75189A222D2F2DB000F9AD6 /* ZJSegmentStyle.h */,
+				C75189A322D2F2DB000F9AD6 /* ZJTitleView.m */,
+				C75189A422D2F2DB000F9AD6 /* UIViewController+ZJScrollPageController.m */,
+				C75189A522D2F2DB000F9AD6 /* ZJScrollPageView.h */,
+				C75189A622D2F2DB000F9AD6 /* UIView+ZJFrame.h */,
+				C75189A722D2F2DB000F9AD6 /* ZJContentView.m */,
+				C75189A822D2F2DB000F9AD6 /* ZJCollectionView.m */,
+				C75189A922D2F2DB000F9AD6 /* ZJSegmentStyle.m */,
+				C75189AA22D2F2DB000F9AD6 /* ZJScrollSegmentView.m */,
+				C75189AB22D2F2DB000F9AD6 /* ZJScrollPageView.m */,
+				C75189AC22D2F2DC000F9AD6 /* UIViewController+ZJScrollPageController.h */,
+				C75189AD22D2F2DC000F9AD6 /* ZJTitleView.h */,
+			);
+			path = ZJScrollPageView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C751898222D2F2A5000F9AD6 /* HLTrelloDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C751899922D2F2AA000F9AD6 /* Build configuration list for PBXNativeTarget "HLTrelloDemo" */;
+			buildPhases = (
+				A4FAB69B45AC1F6831FE33B1 /* [CP] Check Pods Manifest.lock */,
+				C751897F22D2F2A5000F9AD6 /* Sources */,
+				C751898022D2F2A5000F9AD6 /* Frameworks */,
+				C751898122D2F2A5000F9AD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HLTrelloDemo;
+			productName = HLTrelloDemo;
+			productReference = C751898322D2F2A5000F9AD6 /* HLTrelloDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C751897B22D2F2A4000F9AD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = alin;
+				TargetAttributes = {
+					C751898222D2F2A5000F9AD6 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = C751897E22D2F2A4000F9AD6 /* Build configuration list for PBXProject "HLTrelloDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C751897A22D2F2A4000F9AD6;
+			productRefGroup = C751898422D2F2A5000F9AD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C751898222D2F2A5000F9AD6 /* HLTrelloDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C751898122D2F2A5000F9AD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C751899322D2F2AA000F9AD6 /* LaunchScreen.storyboard in Resources */,
+				C751899022D2F2AA000F9AD6 /* Assets.xcassets in Resources */,
+				C75189BA22D34AF4000F9AD6 /* HLListViewMoveTool in Resources */,
+				C751898E22D2F2A5000F9AD6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4FAB69B45AC1F6831FE33B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HLTrelloDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C751897F22D2F2A5000F9AD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75189B822D310B5000F9AD6 /* HLListViewMoveChildController.m in Sources */,
+				C75189B222D2F2DC000F9AD6 /* ZJCollectionView.m in Sources */,
+				C751898B22D2F2A5000F9AD6 /* ViewController.m in Sources */,
+				C75189B322D2F2DC000F9AD6 /* ZJSegmentStyle.m in Sources */,
+				C75189B522D2F2DC000F9AD6 /* ZJScrollPageView.m in Sources */,
+				C75189B122D2F2DC000F9AD6 /* ZJContentView.m in Sources */,
+				C75189AF22D2F2DC000F9AD6 /* ZJTitleView.m in Sources */,
+				C751899622D2F2AA000F9AD6 /* main.m in Sources */,
+				C75189AE22D2F2DC000F9AD6 /* UIView+ZJFrame.m in Sources */,
+				C75189B022D2F2DC000F9AD6 /* UIViewController+ZJScrollPageController.m in Sources */,
+				C751898822D2F2A5000F9AD6 /* AppDelegate.m in Sources */,
+				C75189B422D2F2DC000F9AD6 /* ZJScrollSegmentView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C751898C22D2F2A5000F9AD6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C751898D22D2F2A5000F9AD6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C751899122D2F2AA000F9AD6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C751899222D2F2AA000F9AD6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C751899722D2F2AA000F9AD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C751899822D2F2AA000F9AD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C751899A22D2F2AA000F9AD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DB6D7239440BBAFD3634134 /* Pods-HLTrelloDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88U32AS72B;
+				INFOPLIST_FILE = HLTrelloDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = alin.HLTrelloDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C751899B22D2F2AA000F9AD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9520E6D8606E834F34FFA2C9 /* Pods-HLTrelloDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88U32AS72B;
+				INFOPLIST_FILE = HLTrelloDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = alin.HLTrelloDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C751897E22D2F2A4000F9AD6 /* Build configuration list for PBXProject "HLTrelloDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C751899722D2F2AA000F9AD6 /* Debug */,
+				C751899822D2F2AA000F9AD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C751899922D2F2AA000F9AD6 /* Build configuration list for PBXNativeTarget "HLTrelloDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C751899A22D2F2AA000F9AD6 /* Debug */,
+				C751899B22D2F2AA000F9AD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C751897B22D2F2A4000F9AD6 /* Project object */;
+}
