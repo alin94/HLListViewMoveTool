@@ -9,15 +9,15 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "HLDragArea.h"
+#import "HLListView.h"
 
 @class HLListViewMoveGestureCoordinator;
 
 @protocol HLListViewMoveDelegate <NSObject>
 
-- (BOOL)hl_listViewShouldBeginLongPress:(UIGestureRecognizer *)gestureRecognizer;
-- (void)hl_listViewBeginLongPressAtIndexPath:(NSIndexPath *)indexPath gestureCoordinator:(HLListViewMoveGestureCoordinator *)gestureCoordinator;
-- (void)hl_listViewRollingCellDidEndScrollAtIndexPath:(NSIndexPath *)indexPath gestureCoordinator:(HLListViewMoveGestureCoordinator *)gestureCoordinator;
-
+- (BOOL)hl_listViewShouldBeginLongPress:(UIGestureRecognizer *)gestureRecognizer onListView:(UIView<HLListView> *)listView gestureCoordinator:(HLListViewMoveGestureCoordinator *)gestureCoordinator;
+- (void)hl_listViewBeginLongPressAtIndexPath:(NSIndexPath *)indexPath onListView:(UIView<HLListView> *)listView gestureCoordinator:(HLListViewMoveGestureCoordinator *)gestureCoordinator;
+- (void)hl_listViewRollingCellDidEndScrollAtIndexPath:(NSIndexPath *)indexPath onListView:(UIView<HLListView> *)listView gestureCoordinator:(HLListViewMoveGestureCoordinator *)gestureCoordinator;
 @end
 
 

@@ -72,6 +72,10 @@ static char *dataSourceChangedBlockKey = "dataSourceChangedBlockKey";
 
 
 -(NSIndexPath *)indexPathForItemAtPoint:(CGPoint) at{
+    if (!self.dataSourceArray.count) {
+        //空列表插入
+        return [NSIndexPath indexPathForRow:0 inSection:0];
+    }
     return [self indexPathForRowAtPoint:at];
 }
 

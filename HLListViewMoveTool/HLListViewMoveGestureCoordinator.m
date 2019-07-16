@@ -9,7 +9,6 @@
 
 
 #import "HLListViewMoveGestureCoordinator.h"
-#import "HLListView.h"
 #import "UIView+HLScreenshot.h"
 #import "NSMutableArray+HLExchangeObject.h"
 
@@ -363,7 +362,7 @@ typedef NS_ENUM(NSUInteger, HLListViewAutoScrollDirection) {
 {
     for (UIView<HLListView> *collection in self.arena.collections){
         CGRect collectionRealFrame = [collection.superview convertRect:collection.frame toView:self.arena.superview];
-        BOOL contains = CGRectContainsPoint(collectionRealFrame, self.fingerPosition);
+        BOOL contains = CGRectContainsPoint(collectionRealFrame, self.fingerPosition) || CGRectContainsRect(self.screenshotView.frame, collectionRealFrame);
         if(contains){
             CGPoint covertPoint = [self.arena.superview convertPoint:self.fingerPosition toView:collection];
             NSIndexPath *index = [collection indexPathForItemAtPoint:covertPoint];
@@ -371,6 +370,8 @@ typedef NS_ENUM(NSUInteger, HLListViewAutoScrollDirection) {
                 if (!self.hasChangedDraggingView) {
                     self.lastDraggingCollection = self.currentDraggingCollection;
                 }
+                self.currentDraggingCollection = collection;
+            }else if (CGRectContainsRect(self.screenshotView.frame, collectionRealFrame)){
                 self.currentDraggingCollection = collection;
             }
             else{
@@ -453,8 +454,8 @@ typedef NS_ENUM(NSUInteger, HLListViewAutoScrollDirection) {
         
     } completion:^(BOOL finished) {
         [self.screenshotView removeFromSuperview];
-        if (self.delegate && [self.delegate respondsToSelector:@selector(hl_listViewRollingCellDidEndScrollAtIndexPath:gestureCoordinator:)]) {
-            [self.delegate hl_listViewRollingCellDidEndScrollAtIndexPath:self.lastRollIndexPath gestureCoordinator:self];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(hl_listViewRollingCellDidEndScrollAtIndexPath:onListView:gestureCoordinator:) ]) {
+            [self.delegate hl_listViewRollingCellDidEndScrollAtIndexPath:self.lastRollIndexPath onListView:self.currentDraggingCollection gestureCoordinator:self];
         }
         self.screenshotView = nil;
         self.beginRollIndexPath = nil;
@@ -475,8 +476,9 @@ typedef NS_ENUM(NSUInteger, HLListViewAutoScrollDirection) {
         return NO;
     }
     if (gestureRecognizer == self.longPress) {
-        if (self.delegate && [self.delegate respondsToSelector:@selector(hl_listViewShouldBeginLongPress:)]) {
-            BOOL allow = [self.delegate hl_listViewShouldBeginLongPress:gestureRecognizer];
+        [self resetCurrentDraggingCollection];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(hl_listViewShouldBeginLongPress: onListView:gestureCoordinator:)]) {
+            BOOL allow = [self.delegate hl_listViewShouldBeginLongPress:gestureRecognizer onListView:self.currentDraggingCollection gestureCoordinator:self];
             if (!allow) {
                 return allow;
             }
@@ -487,9 +489,6 @@ typedef NS_ENUM(NSUInteger, HLListViewAutoScrollDirection) {
             return NO;
         }
         self.fingerPosition = fingerPosition;
-        if (!self.currentDraggingCollection) {
-            [self resetCurrentDraggingCollection];
-        }
         if (!self.currentDraggingCollection) {
             //没有选中list
             return NO;
@@ -538,8 +537,8 @@ typedef NS_ENUM(NSUInteger, HLListViewAutoScrollDirection) {
         self.beginRollIndexPath = currentcurrentRollIndexPath;
         self.lastRollIndexPath = self.beginRollIndexPath;
         if (self.lastRollIndexPath) {
-            if (self.delegate && [self.delegate respondsToSelector:@selector(hl_listViewBeginLongPressAtIndexPath:gestureCoordinator:)]) {
-                [self.delegate hl_listViewBeginLongPressAtIndexPath:self.beginRollIndexPath gestureCoordinator:self];
+            if (self.delegate && [self.delegate respondsToSelector:@selector(hl_listViewBeginLongPressAtIndexPath:onListView:gestureCoordinator:)]) {
+                [self.delegate hl_listViewBeginLongPressAtIndexPath:self.beginRollIndexPath onListView:self.currentDraggingCollection gestureCoordinator:self];
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                     //手势开始，对被选中cell截图，隐藏原cell
                     [self cellSelectedAtIndexPath:self.lastRollIndexPath];
@@ -607,9 +606,6 @@ typedef NS_ENUM(NSUInteger, HLListViewAutoScrollDirection) {
         }
         [self stopAutoScroll];
         [self rollingCellDidEndScroll];
-        self.currentDraggingCollection = nil;
-        self.lastDraggingCollection = nil;
-        self.hasChangedDraggingView = NO;
     }
     
 }
