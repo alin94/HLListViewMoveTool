@@ -10,12 +10,6 @@
 
 
 @interface UICollectionView (HLListView)
-@property (nonatomic, strong) NSArray *indexPathsForNotAllowMove;
-@property (nonatomic, strong) NSArray *dataSourceArray;
-@property (nonatomic, copy) void (^dataSourceDeleteBlock)(id object,NSIndexPath *indexPath);
-@property (nonatomic, copy) void (^dataSourceInsertBlock)(id object,NSIndexPath *indexPath);
-@property (nonatomic, copy) void (^dataSourceExchangedBlock)(NSIndexPath * originalIndexPath, NSIndexPath * currentIndexPath);
-@property (nonatomic, copy) void (^dataSourceChangedBlock)(NSArray * dataSourceArray);
 
 @end
 

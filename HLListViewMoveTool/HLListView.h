@@ -11,7 +11,6 @@
 @protocol HLListView <NSObject>
 
 @required
-
 - (NSIndexPath *)indexPathForItemAtPoint:(CGPoint)at;
 - (UIView *)itemAtIndexPath:(NSIndexPath *)index;
 - (void)deleteItemsAtIndexPaths:(NSArray *)indeces;
@@ -24,5 +23,6 @@
 - (void (^)(id, NSIndexPath *))dataSourceDeleteBlock;
 - (void (^)(NSIndexPath *, NSIndexPath *))dataSourceExchangedBlock;
 - (void (^)(NSArray *))dataSourceChangedBlock;
+- (NSString *)idString;
 
 @end
